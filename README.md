@@ -1,6 +1,7 @@
-# ![logo.svg](./logo.svg)
+<!-- # ![logo.svg](./logo.svg) -->
+<p align="center"><img src="logo.svg"  width="300"></p>
 
-Ivar chain is an Ethereum-based blockchain fork from [GoQuorum](https://github.com/ConsenSys/quorum) and merged with [REI](https://github.com/reichain/rei).
+ARZIO Chain is an Ethereum-based blockchain fork from [GoQuorum](https://github.com/ConsenSys/quorum) and merged with [REI](https://github.com/reichain/rei).
 
 Key differences from GoQuorum:
 
@@ -30,10 +31,10 @@ buildctl build \
 ## Install
 
 ```shell
-mkdir ivar-chain
-cd ivar-chain
-git clone https://github.com/ivarex/chain.git .
-make ivar
+mkdir arzio
+cd arzio
+git clone https://github.com/arzio-chain/arzio.git .
+make arzio
 ```
 
 ## Run RPC Node
@@ -41,13 +42,13 @@ make ivar
 ### Mainnet
 
 ```shell
-ivar --datadir ~/.ivar/mainnet --mainnet --http
+ivar --datadir ~/.arzio/mainnet --mainnet --http
 ```
 
 ### Testnet
 
 ```shell
-ivar --datadir ~/.ivar/testnet --testnet --http
+ivar --datadir ~/.arzio/testnet --testnet --http
 ```
 
 ## License
