@@ -42,13 +42,13 @@ make arzio
 ### Mainnet
 
 ```shell
-ivar --datadir ~/.arzio/mainnet --mainnet --http
+arzio --datadir ~/.arzio/mainnet --mainnet --http
 ```
 
 ### Testnet
 
 ```shell
-ivar --datadir ~/.arzio/testnet --testnet --http
+arzio --datadir ~/.arzio/testnet --testnet --http
 ```
 
 ## License

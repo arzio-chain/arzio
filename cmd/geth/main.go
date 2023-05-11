@@ -270,9 +270,9 @@ func prepare(ctx *cli.Context) {
 	// If we're running a known preset, log it for convenience.
 	switch {
 	case ctx.GlobalIsSet(utils.MainnetFlag.Name):
-		log.Info("Starting Geth on Ivar Mainnet...")
+		log.Info("Starting Geth on Arzio Mainnet...")
 	case ctx.GlobalIsSet(utils.TestnetFlag.Name):
-		log.Info("Starting Geth on Ivar Testnet...")
+		log.Info("Starting Geth on Arzio Testnet...")
 	case !ctx.GlobalIsSet(utils.NetworkIdFlag.Name):
 		log.Info("Starting Geth on Ethereum mainnet...")
 	}

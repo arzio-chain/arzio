@@ -30,9 +30,9 @@ const (
 	QuorumVersionMinor = 1
 	QuorumVersionPatch = 0
 
-	IvarVersionMajor = 0
-	IvarVersionMinor = 0
-	IvarVersionPatch = 7
+	ArzioVersionMajor = 0
+	ArzioVersionMinor = 0
+	ArzioVersionPatch = 7
 )
 
 // Version holds the textual version string.
@@ -54,8 +54,8 @@ var QuorumVersion = func() string {
 	return fmt.Sprintf("%d.%d.%d", QuorumVersionMajor, QuorumVersionMinor, QuorumVersionPatch)
 }()
 
-var IvarVersion = func() string {
-	return fmt.Sprintf("%d.%d.%d", IvarVersionMajor, IvarVersionMinor, IvarVersionPatch)
+var ArzioVersion = func() string {
+	return fmt.Sprintf("%d.%d.%d", ArzioVersionMajor, ArzioVersionMinor, ArzioVersionPatch)
 }()
 
 // ArchiveVersion holds the textual version string used for Geth archives.
@@ -81,7 +81,7 @@ func VersionWithCommit(gitCommit, gitDate string) string {
 		vsn += "-" + gitDate
 	}
 
-	vsn += "(ivar-v" + IvarVersion + ")"
+	vsn += "(arzio-v" + ArzioVersion + ")"
 
 	return vsn
 }
